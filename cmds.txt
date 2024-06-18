@@ -1,0 +1,14 @@
+npm init
+npm i -D nodemon
+"scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+
+npm i express
+npm install prisma --save-dev
+npx prisma init --datasource-provider sqlite
+npx prisma migrate dev --name "create task table" (criando as tabelas com base no model no schema.prisma)
+npm i bcrypt
+npm i jsonwebtoken
