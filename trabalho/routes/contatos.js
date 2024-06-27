@@ -17,7 +17,7 @@ router.get("/contatos", auth, async (req, res) => {
   res.json(contatos);
 });
 
-router.get("/contatos/:id", auth, async (req, res) => {
+router.get("/contatos/:id", auth, async (req, res) => { 
   const id = Number(req.params.id);
   const contatos = await prisma.contatos.findMany({
     where: { id }

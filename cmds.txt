@@ -12,3 +12,4 @@ npx prisma init --datasource-provider sqlite
 npx prisma migrate dev --name "create task table" (criando as tabelas com base no model no schema.prisma)
 npm i bcrypt
 npm i jsonwebtoken
+npm i zod
